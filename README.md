@@ -21,6 +21,7 @@ go get -u github.com/takashabe/go-pubsub
 ### Start server
 
 ```
+make deps # need once at first
 make build # need once at first
 cmd/pubsub/pubsub
 ```
@@ -51,7 +52,7 @@ datastore:
     db: 0
 
 # In-memory
-datasotre:
+datastore:
 ```
 
 ## Components
@@ -83,6 +84,10 @@ _When do not specify created component(topic, subscription), Default component u
 5. Subscriber retrun ack response
 
 ## API
+
+### Examples
+
+[Request examples](EXAMPLES.md) for each method that requires a JSON body are located here
 
 ### Topic
 
