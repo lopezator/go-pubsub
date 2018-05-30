@@ -1,0 +1,15 @@
+# MySQL
+# datastore:
+#   mysql:
+#     addr: "localhost:3306"
+#     user: pubsub
+#     password: ""
+
+# Redis
+# datastore:
+#   redis:
+#     addr: "localhost:6379"
+#     db: 0
+
+# In-memory
+datastore:
