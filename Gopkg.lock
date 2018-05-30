@@ -48,6 +48,17 @@
 
 [[projects]]
   branch = "master"
+  name = "github.com/takashabe/go-pubsub"
+  packages = [
+    "datastore",
+    "models",
+    "server",
+    "stats"
+  ]
+  revision = "fcd3384cc4518925dbbf07c8b0291950f2c37d6c"
+
+[[projects]]
+  branch = "master"
   name = "github.com/takashabe/go-router"
   packages = ["."]
   revision = "1eefa4c80f5545ca8e35c9dc96067ec42e6d1f2b"
@@ -55,12 +66,12 @@
 [[projects]]
   name = "gopkg.in/yaml.v2"
   packages = ["."]
-  revision = "7f97868eec74b32b0982dd158a51a446d1da7eb5"
-  version = "v2.1.1"
+  revision = "5420a8b6744d3b0345ab293f6fcba19c978f1183"
+  version = "v2.2.1"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "6c71e6ef71bbed5c7a98b7eed56e20b726f14840b7770327e880f8669cfea19f"
+  inputs-digest = "77444211c1afa9caa2e4995bb186297a6b751ee7ac5dac542f3c755385fe00e9"
   solver-name = "gps-cdcl"
   solver-version = 1
