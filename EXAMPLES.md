@@ -31,13 +31,12 @@ Subscription
 
 ### Create a subscription:
 
-* URL: PUT http://localhost:8080/subscription/sms
+* URL: PUT http://localhost:8080/subscription/{subscription_name}
 
 * BODY:
 
 ```json
 {
-	"name": "my-subscription",
 	"topic": "my-topic",
 	"ack_deadline_seconds": 10
 }
@@ -45,7 +44,7 @@ Subscription
 
 ### Pull a subscription:
 
-* URL: POST http://localhost:8080/subscription/sms/pull
+* URL: POST http://localhost:8080/subscription/{topic_name}/pull
 
 * BODY:
 
@@ -57,7 +56,7 @@ Subscription
 
 ## Messages ack:
 
-* URL: POST /subscription/{subscription}/ack
+* URL: POST http://localhost:8080/subscription/{subscription_name}/ack
 
 * BODY:
 
@@ -70,8 +69,11 @@ Subscription
 }
 ```
 
-
 ## Messages modify ack:
+
+* URL: POST http://localhost:8080/subscription/{subscription_name}/ack/modify
+
+* BODY:
 
 ```json
 {
